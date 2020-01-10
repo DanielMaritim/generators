@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>generators</title>
+</head>
+<body>
+	
+</body>
+
+<script type="text/javascript">
+// a generator is a function that can stop midway and then continue after certain conditions are met
+// generators uses yield keyword to pause the function execution/movement
+
+	function* sampleGenerator() { 
+		yield 'apples';
+		yield 'bacon';
+		console.log ('this is after bacon...');
+		yield 'corn';
+	
+	}
+	let sample = sampleGenerator();
+	console.log(sample.next());
+
+</script>
+
+</html>
